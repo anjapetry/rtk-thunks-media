@@ -1,16 +1,23 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchUsers } from "../store/thunks/fetchUsers";
 
 
 function UserList() {
   const dispatch = useDispatch();
+  const { isLoading, data, error} = useSelector((state) => state.users);
 
   useEffect(() => {
     dispatch(fetchUsers());
   }, [dispatch]);
 
-  return 'Users List'
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>Error fetching data</div>;
+  }
+  return <div>{data.length}</div>;
 }
 
 export default UserList

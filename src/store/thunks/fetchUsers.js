@@ -6,3 +6,4 @@ export const fetchUsers = createAsyncThunk(
         const response = await axios.get('http://localhost:3005/users');// axios is a library for making HTTP requests;
         return response.data;
     });
+    
