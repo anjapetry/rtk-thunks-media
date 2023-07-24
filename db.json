@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Myra"
+      "name": "Myra Thiel"
     },
     {
       "name": "Marilyn Klocko",
@@ -95,6 +95,14 @@
     {
       "name": "Brenda Schamberger",
       "id": 24
+    },
+    {
+      "name": "Wesley Huel",
+      "id": 25
+    },
+    {
+      "name": "Benny Schulist",
+      "id": 26
     }
   ],
   "albums": [],
