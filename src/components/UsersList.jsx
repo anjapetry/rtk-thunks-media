@@ -1,48 +1,48 @@
 import { useEffect } from 'react';
-import { useSelector } from 'react-redux'; // import the hooks
-import { fetchUsers, addUser } from '../store'; // import the thunks we created earlier
-import { useThunk } from '../hooks/use-thunks'; // import the hook we just created
+import { useSelector } from 'react-redux';
+import { fetchUsers, addUser } from '../store';
 import Button from './Button';
 import Skeleton from './Skeleton';
-import UsersListItem  from './UsersListItem';
+import { useThunk } from '../hooks/use-thunk';
+import UsersListItem from './UsersListItem';
 
 function UsersList() {
-  const [doFetchUsers, isLoadingUsers, loadingUsersError] = useThunk(fetchUsers);
+  const [doFetchUsers, isLoadingUsers, loadingUsersError] =
+    useThunk(fetchUsers);
   const [doCreateUser, isCreatingUser, creatingUserError] = useThunk(addUser);
-
   const { data } = useSelector((state) => {
     return state.users;
   });
 
-  useEffect(() => { // dispatch the thunk on component mount
+  useEffect(() => {
     doFetchUsers();
   }, [doFetchUsers]);
 
   const handleUserAdd = () => {
-  doCreateUser();
+    doCreateUser();
   };
 
   let content;
   if (isLoadingUsers) {
-    content = <Skeleton times={6} className="w-full h-10" />;
+    content = <Skeleton times={6} className="h-10 w-full" />;
   } else if (loadingUsersError) {
     content = <div>Error fetching data...</div>;
   } else {
     content = data.map((user) => {
       return <UsersListItem key={user.id} user={user} />;
-});
-}
+    });
+  }
 
   return (
-    <div className='rounded-lg'>
-      <div className="flex flex-row items-center justify-between m-3">
-        <h1 className="m-2 text-xl font-semibold">Users</h1>
-        <Button loading={isCreatingUser} className="p-3 my-auto rounded-lg bg-teal-200 text-black" onClick={handleUserAdd}>
+    <div>
+      <div className="flex flex-row justify-between items-center m-3">
+        <h1 className="m-2 text-xl">Users</h1>
+        <Button loading={isCreatingUser} onClick={handleUserAdd} className="bg-teal-300 text-black/90 border-black/70 rounded">
           + Add User
         </Button>
-        { creatingUserError && 'Error creating user ...'}
+        {creatingUserError && 'Error creating user...'}
       </div>
-      <div className="flex flex-col p-3 space-y-2">{content}</div>
+      {content}
     </div>
   );
 }
