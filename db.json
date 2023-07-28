@@ -31,6 +31,10 @@
     {
       "name": "Clinton Skiles DDS",
       "id": 24
+    },
+    {
+      "name": "Carla Conroy",
+      "id": 25
     }
   ],
   "albums": [
@@ -88,6 +92,26 @@
       "userId": 10,
       "title": "Electronic Plastic Soap",
       "id": 20
+    },
+    {
+      "userId": 1,
+      "title": "Intelligent Soft Ball",
+      "id": 21
+    },
+    {
+      "userId": 10,
+      "title": "Awesome Bronze Sausages",
+      "id": 22
+    },
+    {
+      "userId": 25,
+      "title": "Incredible Soft Hat",
+      "id": 23
+    },
+    {
+      "userId": 24,
+      "title": "Fantastic Metal Bacon",
+      "id": 24
     }
   ],
   "photos": []
