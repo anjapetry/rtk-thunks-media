@@ -68,6 +68,26 @@
       "userId": 1,
       "title": "Recycled Bronze Cheese",
       "id": 16
+    },
+    {
+      "userId": 1,
+      "title": "Sleek Granite Bike",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "title": "Licensed Cotton Cheese",
+      "id": 18
+    },
+    {
+      "userId": 10,
+      "title": "Rustic Fresh Cheese",
+      "id": 19
+    },
+    {
+      "userId": 10,
+      "title": "Electronic Plastic Soap",
+      "id": 20
     }
   ],
   "photos": []

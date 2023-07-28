@@ -7,6 +7,7 @@ const albumsApi = createApi({
     endpoints: (builder) => {
         return {
             addAlbum: builder.mutation({
+                invalidatesTags: (result, error, user) => [{ type: 'Album', id: user.id }],
                 query: (user) => {
                     return {
                         url: '/albums',
@@ -18,7 +19,10 @@ const albumsApi = createApi({
                     };
                 },
             }),
-            fetchAlbums: builder.query({
+            fetchAlbums: builder.query({ // fetchAlbums is the name of the hook that will be generated for us by RTK Query
+                providesTags: (result, error, user) => {
+                    return [{ type: 'Album', id: user.id }];
+                },
                 query: (user) => {
                     return {
                 url:'/albums',
