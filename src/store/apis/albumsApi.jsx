@@ -20,3 +20,5 @@ const albumsApi = createApi({
  },
 });
 
+export const { useFetchAlbumsQuery } = albumsApi;
+export { albumsApi };
