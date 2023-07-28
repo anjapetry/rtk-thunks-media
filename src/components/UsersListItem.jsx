@@ -2,7 +2,7 @@ import { GoTrash } from 'react-icons/go';
 import Button from './Button';
 import { removeUser } from '../store';
 import { useThunk } from '../hooks/use-thunk';
-import ExpendablePanel from './ExpendablePanel';
+import ExpandablePanel from './ExpandablePanel';
 import AlbumsList from './AlbumsList';
 
 export default function UsersListItem({ user }) {
@@ -22,9 +22,9 @@ export default function UsersListItem({ user }) {
   </>;
 
   return (
-    <ExpendablePanel header={header}>
+    <ExpandablePanel header={header}>
       <AlbumsList user={user} />
-    </ExpendablePanel>
+    </ExpandablePanel>
   );
 }
 

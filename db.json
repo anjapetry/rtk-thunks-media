@@ -21,22 +21,20 @@
       "id": 18
     },
     {
-      "name": "Leslie Macejkovic",
-      "id": 19
-    },
-    {
-      "name": "Ramona Shanahan MD",
-      "id": 20
-    },
-    {
-      "name": "Allison Legros",
-      "id": 21
-    },
-    {
       "name": "Guillermo Moen",
       "id": 22
+    },
+    {
+      "name": "Micheal Luettgen",
+      "id": 23
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 10,
+      "title": "Hiking Trip to the Smoky Mountains",
+      "userId": 1
+    }
+  ],
   "photos": []
 }

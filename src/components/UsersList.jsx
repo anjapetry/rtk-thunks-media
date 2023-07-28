@@ -36,7 +36,7 @@ function UsersList() {
   return (
     <div>
       <div className="flex flex-row justify-between items-center m-3">
-        <h1 className="m-2 text-xl">Users</h1>
+        <h1 className="m-2 text-2xl font-bold tracking-widers">Users</h1>
         <Button loading={isCreatingUser} onClick={handleUserAdd} className="bg-teal-300 text-black/90 border-black/70 rounded">
           + Add User
         </Button>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { GoChevronDown, GoChevronLeft } from 'react-icons/go';
 
-const ExpendablePanel = ({ header, children }) => {
+const ExpandablePanel = ({ header, children }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = () => {
@@ -23,4 +23,4 @@ const ExpendablePanel = ({ header, children }) => {
   )
 }
 
-export default ExpendablePanel
+export default ExpandablePanel
