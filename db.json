@@ -27,6 +27,10 @@
     {
       "name": "Micheal Luettgen",
       "id": 23
+    },
+    {
+      "name": "Clinton Skiles DDS",
+      "id": 24
     }
   ],
   "albums": [
@@ -34,6 +38,36 @@
       "id": 10,
       "title": "Hiking Trip to the Smoky Mountains",
       "userId": 1
+    },
+    {
+      "userId": 1,
+      "title": "Electronic Granite Sausages",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Luxurious Steel Computer",
+      "id": 12
+    },
+    {
+      "userId": 10,
+      "title": "Modern Bronze Shirt",
+      "id": 13
+    },
+    {
+      "userId": 11,
+      "title": "Handmade Rubber Car",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "title": "Awesome Metal Fish",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "title": "Recycled Bronze Cheese",
+      "id": 16
     }
   ],
   "photos": []
