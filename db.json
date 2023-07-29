@@ -35,6 +35,10 @@
     {
       "name": "Carla Conroy",
       "id": 25
+    },
+    {
+      "name": "Ramon Langworth",
+      "id": 26
     }
   ],
   "albums": [
@@ -112,6 +116,56 @@
       "userId": 24,
       "title": "Fantastic Metal Bacon",
       "id": 24
+    },
+    {
+      "userId": 1,
+      "title": "Rustic Metal Chair",
+      "id": 25
+    },
+    {
+      "userId": 1,
+      "title": "Luxurious Wooden Chair",
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "title": "Tasty Plastic Pizza",
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "title": "Licensed Bronze Ball",
+      "id": 28
+    },
+    {
+      "userId": 18,
+      "title": "Oriental Granite Chicken",
+      "id": 29
+    },
+    {
+      "userId": 1,
+      "title": "Rustic Concrete Keyboard",
+      "id": 30
+    },
+    {
+      "userId": 1,
+      "title": "Handcrafted Granite Sausages",
+      "id": 31
+    },
+    {
+      "userId": 1,
+      "title": "Licensed Plastic Hat",
+      "id": 32
+    },
+    {
+      "userId": 1,
+      "title": "Unbranded Metal Fish",
+      "id": 33
+    },
+    {
+      "userId": 11,
+      "title": "Fantastic Frozen Pants",
+      "id": 34
     }
   ],
   "photos": []
