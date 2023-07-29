@@ -25,33 +25,15 @@
       "id": 22
     },
     {
-      "name": "Micheal Luettgen",
-      "id": 23
-    },
-    {
-      "name": "Clinton Skiles DDS",
-      "id": 24
-    },
-    {
       "name": "Carla Conroy",
       "id": 25
     },
     {
-      "name": "Ramon Langworth",
-      "id": 26
+      "name": "Patty Murazik",
+      "id": 27
     }
   ],
   "albums": [
-    {
-      "id": 10,
-      "title": "Hiking Trip to the Smoky Mountains",
-      "userId": 1
-    },
-    {
-      "userId": 1,
-      "title": "Electronic Granite Sausages",
-      "id": 11
-    },
     {
       "userId": 1,
       "title": "Luxurious Steel Computer",
@@ -113,11 +95,6 @@
       "id": 23
     },
     {
-      "userId": 24,
-      "title": "Fantastic Metal Bacon",
-      "id": 24
-    },
-    {
       "userId": 1,
       "title": "Rustic Metal Chair",
       "id": 25
@@ -166,6 +143,21 @@
       "userId": 11,
       "title": "Fantastic Frozen Pants",
       "id": 34
+    },
+    {
+      "userId": 1,
+      "title": "Intelligent Steel Chicken",
+      "id": 35
+    },
+    {
+      "userId": 1,
+      "title": "Awesome Frozen Chair",
+      "id": 36
+    },
+    {
+      "userId": 1,
+      "title": "Licensed Metal Cheese",
+      "id": 37
     }
   ],
   "photos": []

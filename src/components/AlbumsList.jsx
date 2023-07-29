@@ -1,6 +1,5 @@
 import { useFetchAlbumsQuery, useAddAlbumMutation } from "../store";
 import Skeleton from './Skeleton';
-import ExpandablePanel from './ExpandablePanel';
 import Button from "./Button";
 import AlbumsListItem from "./AlbumsListItem";
 
@@ -24,17 +23,23 @@ const AlbumsList = ({ user }) => {
   });
   }
 
-  return <div>
+  return (
+  <div>
     <div className="m-2 flex flex-row items-center justify-between">
-      <h3 className="text-lg font-bold">
-      Albums for {user.name}
-      </h3>
-      <Button loading={results.isLoading} onClick={handleAddAlbum} className="rounded ml-3 text-black bg-teal-300 border-black/80"> + Add Album</Button>
+      <h3 className="text-lg font-bold"> Albums for {user.name}</h3>
+      <Button 
+      loading={results.isLoading} 
+      onClick={handleAddAlbum} 
+      className="rounded ml-3 text-black bg-teal-300 border-black/80"
+      >
+       + Add Album
+      </Button>
     </div>
     <div>
       {content}
     </div>
-    </div>;
+    </div>
+  );
 }
 
 export default AlbumsList;

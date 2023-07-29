@@ -8,6 +8,7 @@ const pause = (duration) => {
     });
   };
 
+
 const albumsApi = createApi({
     reducerPath: 'albums',
     baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3005',
@@ -18,11 +19,16 @@ const albumsApi = createApi({
     },
 }),
 
-
-
-
     endpoints: (builder) => {
         return {
+            removeAlbum: builder.mutation({
+              query: (album) => {
+                return {
+                  url: `/albums/${album.id}`,
+                  method: 'DELETE',
+                };
+              }
+            }),
             addAlbum: builder.mutation({
                 invalidatesTags: (result, error, user) => [{ type: 'Album', id: user.id }],
                 query: (user) => {
@@ -54,5 +60,5 @@ const albumsApi = createApi({
  },
 });
 
-export const { useFetchAlbumsQuery, useAddAlbumMutation } = albumsApi;
+export const { useFetchAlbumsQuery, useAddAlbumMutation, useRemoveAlbumMutation } = albumsApi;
 export { albumsApi };
