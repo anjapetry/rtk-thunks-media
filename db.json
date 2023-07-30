@@ -35,54 +35,14 @@
   ],
   "albums": [
     {
-      "userId": 1,
-      "title": "Luxurious Steel Computer",
-      "id": 12
-    },
-    {
       "userId": 10,
       "title": "Modern Bronze Shirt",
       "id": 13
     },
     {
-      "userId": 11,
-      "title": "Handmade Rubber Car",
-      "id": 14
-    },
-    {
-      "userId": 1,
-      "title": "Awesome Metal Fish",
-      "id": 15
-    },
-    {
-      "userId": 1,
-      "title": "Recycled Bronze Cheese",
-      "id": 16
-    },
-    {
-      "userId": 1,
-      "title": "Sleek Granite Bike",
-      "id": 17
-    },
-    {
-      "userId": 1,
-      "title": "Licensed Cotton Cheese",
-      "id": 18
-    },
-    {
-      "userId": 10,
-      "title": "Rustic Fresh Cheese",
-      "id": 19
-    },
-    {
       "userId": 10,
       "title": "Electronic Plastic Soap",
       "id": 20
-    },
-    {
-      "userId": 1,
-      "title": "Intelligent Soft Ball",
-      "id": 21
     },
     {
       "userId": 10,
@@ -95,44 +55,9 @@
       "id": 23
     },
     {
-      "userId": 1,
-      "title": "Rustic Metal Chair",
-      "id": 25
-    },
-    {
-      "userId": 1,
-      "title": "Luxurious Wooden Chair",
-      "id": 26
-    },
-    {
-      "userId": 1,
-      "title": "Tasty Plastic Pizza",
-      "id": 27
-    },
-    {
-      "userId": 1,
-      "title": "Licensed Bronze Ball",
-      "id": 28
-    },
-    {
       "userId": 18,
       "title": "Oriental Granite Chicken",
       "id": 29
-    },
-    {
-      "userId": 1,
-      "title": "Rustic Concrete Keyboard",
-      "id": 30
-    },
-    {
-      "userId": 1,
-      "title": "Handcrafted Granite Sausages",
-      "id": 31
-    },
-    {
-      "userId": 1,
-      "title": "Licensed Plastic Hat",
-      "id": 32
     },
     {
       "userId": 1,
@@ -151,13 +76,8 @@
     },
     {
       "userId": 1,
-      "title": "Awesome Frozen Chair",
-      "id": 36
-    },
-    {
-      "userId": 1,
-      "title": "Licensed Metal Cheese",
-      "id": 37
+      "title": "Practical Granite Shirt",
+      "id": 38
     }
   ],
   "photos": []

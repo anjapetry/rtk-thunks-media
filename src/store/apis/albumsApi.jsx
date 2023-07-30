@@ -12,7 +12,7 @@ const pause = (duration) => {
 const albumsApi = createApi({
     reducerPath: 'albums',
     baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3005',
-    fetchFn: async (...args) => {   
+    fetchFn: async (...args) => {
         // REMOVE FOR PRODUCTION!!!
         await pause(1000);
         return fetch(...args);
@@ -22,6 +22,9 @@ const albumsApi = createApi({
     endpoints: (builder) => {
         return {
             removeAlbum: builder.mutation({
+              invalidatesTags: (result, error, album) => {
+                return [{ type: 'Album', id: album.id }];
+              },
               query: (album) => {
                 return {
                   url: `/albums/${album.id}`,
@@ -30,7 +33,9 @@ const albumsApi = createApi({
               }
             }),
             addAlbum: builder.mutation({
-                invalidatesTags: (result, error, user) => [{ type: 'Album', id: user.id }],
+                invalidatesTags: (result, error, user) => { 
+                  return [{ type: 'UsersAlbums', id: user.id }];
+                },
                 query: (user) => {
                     return {
                         url: '/albums',
@@ -42,9 +47,13 @@ const albumsApi = createApi({
                     };
                 },
             }),
-            fetchAlbums: builder.query({ // fetchAlbums is the name of the hook that will be generated for us by RTK Query
+            fetchAlbums: builder.query({
                 providesTags: (result, error, user) => {
-                    return [{ type: 'Album', id: user.id }];
+                    const tags = result.map(album => {
+                    return { type: 'Album', id: album.id }
+                  });
+                  tags.push({ type: 'UsersAlbums', id: user.id });
+                  return tags;
                 },
                 query: (user) => {
                     return {
