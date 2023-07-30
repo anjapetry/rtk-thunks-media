@@ -4,6 +4,6 @@
 
 @layer base {
     body {
-        @apply bg-black/80 text-teal-200;
+        @apply bg-cyan-950 text-teal-200;
     }
 }

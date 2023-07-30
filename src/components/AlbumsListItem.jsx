@@ -12,7 +12,7 @@ const AlbumsListItem = ({ album }) => {
     };
 
     const header = (
-        <div>
+        <>
         <Button
         loading={results.isLoading}
         onClick={handleRemoveAlbum} 
@@ -20,7 +20,7 @@ const AlbumsListItem = ({ album }) => {
             <GoTrash />
         </Button>
         {album.title}
-        </div>
+        </>
     );
 
     return (
