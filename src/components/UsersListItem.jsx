@@ -12,12 +12,12 @@ export default function UsersListItem({ user }) {
     doRemoveUser(user);
   };
 
-  const header = 
+  const header =
   <>
     <Button loading={isLoading} onClick={handleClick} className="mr-3 rounded">
       <GoTrash />
     </Button>
-      {error && <div className="text-red-500">Error deleting user.</div>}
+      {error && <div className="text-xl text-red-500 m-2">Error deleting user.</div>}
       {user.name}
   </>;
 

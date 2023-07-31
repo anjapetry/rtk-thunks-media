@@ -26,7 +26,7 @@ function UsersList() {
   if (isLoadingUsers) {
     content = <Skeleton times={6} className="h-10 w-full" />;
   } else if (loadingUsersError) {
-    content = <div>Error fetching data...</div>;
+    content = <div className=' text-xl text-red-500 m-2'>Error fetching data...</div>;
   } else {
     content = data.map((user) => {
       return <UsersListItem key={user.id} user={user} />;
@@ -36,7 +36,7 @@ function UsersList() {
   return (
     <div>
       <div className="flex flex-row justify-between items-center m-3">
-        <h1 className="m-2 text-2xl font-bold tracking-widers">Users</h1>
+        <h1 className="m-2 text-2xl font-bold tracking-wider">Users</h1>
         <Button loading={isCreatingUser} onClick={handleUserAdd} className="bg-teal-300 text-black/90 border-black/70 rounded">
           + Add User
         </Button>

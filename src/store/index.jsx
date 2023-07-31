@@ -23,7 +23,7 @@ export * from './thunks/fetchUsers';
 export * from './thunks/addUser';
 export * from './thunks/removeUser';
 
-export { 
+export {
   useFetchAlbumsQuery,
   useAddAlbumMutation,
   useRemoveAlbumMutation 
